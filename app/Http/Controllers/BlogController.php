@@ -43,6 +43,8 @@ class BlogController extends Controller
             'description' => 'required',
         ]);
   
+        // return $request->all();
+        
         Blog::create($request->all());
    
         return redirect()->route('blogs.index')
